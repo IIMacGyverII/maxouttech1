@@ -464,6 +464,32 @@ img[src*="maxout_logo"] {
   color: var(--muted);
 }
 
+.doc-section {
+  margin-bottom: 2.5rem;
+}
+
+.doc-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.doc-list {
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  color: var(--muted);
+}
+
+.doc-list a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+@media (min-width: 900px) {
+  .doc-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .contact-grid {
   display: grid;
   gap: 2rem;
